@@ -43,4 +43,4 @@ async function sandwich(target, cookie) {
     }
 }
 
-setTimeout(sandwich, 100, 'https://www.allrecipes.com/instant-pot-quinoa-recipe-7494907', 'globalTI_SID');
+setTimeout(sandwich, 100, 'https://www.allrecipes.com/favorites', 'globalTI_SID');
