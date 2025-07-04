@@ -39,4 +39,4 @@
     }
 }
 
-setTimeout(sandwich, 100, 'https://www.allrecipes.com/instant-pot-quinoa-recipe-7494907', 'globalTI_SID');
+setTimeout(sandwich, 100, 'https://www.allrecipes.com/3-ingredient-air-fryer-everything-bagel-chicken-strips-recipe-11737461', 'globalTI_SID');
