@@ -4,7 +4,7 @@ async function sandwich(target, cookie) {
 
     const url = new URL(target);
     const domain = ".allrecipes.com";
-    const path = "/favorites";
+    const path = "/instant-pot-quinoa-recipe-7494907";
 
     iframe.src = target;
     // Hide the iframe
