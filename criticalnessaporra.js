@@ -13,7 +13,7 @@
 
   const payload = {
     "hashId": hid,
-    "email": "ferreiraklet_+5@wearehackerone.com",
+    "email": "ferreirakletx@gmail.com",
     "data": {
       "displayName": "userHacking",
       "tagLine": "putasecaaaaaa",
