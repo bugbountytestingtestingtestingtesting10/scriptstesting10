@@ -41,6 +41,7 @@
   fetch('/user-proxy/saveprofile', {
     method: 'POST',
     credentials: 'include', // envia com cookies/sessão
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json, text/plain, */*'
